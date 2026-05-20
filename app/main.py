@@ -26,7 +26,7 @@ limiter = Limiter(key_func=get_remote_address)
 app = FastAPI(
     title=settings.app_name,
     version=settings.app_version,
-    description="Production-grade Personal Expense Tracker API",
+    description="Personal Expense Tracker API",
     docs_url="/docs",
     redoc_url="/redoc",
     openapi_url="/openapi.json",
