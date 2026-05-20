@@ -63,7 +63,7 @@ class AuthService:
 
         if not user:
             # Use constant time comparison to prevent timing attacks
-            PasswordHandler.verify("dummy", "$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/X4")
+            PasswordHandler.verify("dummy", "$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/X4.aaaaaaaaaaaaaaa")
             raise AuthenticationException("Invalid email or password")
 
         # Get user with password
